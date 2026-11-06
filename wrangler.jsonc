@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "antiquaire-debarras-paris",
+  "name": "antiquaire-debarras-paris-v2",
   "main": "src/worker.js",
   "compatibility_date": "2026-10-01",
   "assets": {
