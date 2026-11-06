@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /merci
+
+Sitemap: https://antiquaire-debarras-paris.fr/sitemap.xml

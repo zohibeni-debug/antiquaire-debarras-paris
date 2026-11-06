@@ -1,0 +1,23 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "antiquaire-debarras-paris",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "html_handling": "drop-trailing-slash",
+    "not_found_handling": "404-page",
+    "run_worker_first": true
+  },
+  "vars": {
+    "MAIL_TO": "contact@antiquaire-debarras-paris.fr",
+    "MAIL_FROM": "Site Antiquaire Débarras Paris <site@antiquaire-debarras-paris.fr>"
+  },
+  // Décommenter une fois le domaine ajouté au compte Cloudflare :
+  // "routes": [
+  //   { "pattern": "antiquaire-debarras-paris.fr", "custom_domain": true },
+  //   { "pattern": "www.antiquaire-debarras-paris.fr", "custom_domain": true }
+  // ],
+  "observability": { "enabled": true }
+}
